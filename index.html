@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Simple calculator by Sufian</h1>
+    <div class="calculator">
+        
+        <input type="text" id="output">
+        <table>
+            <tr >
+                <td><button id="aroperations" class="button" onclick="onClickHandler('+')">+</button></td>
+                <td><button id="aroperations" class="button" onclick="onClickHandler('-')">-</button></td>
+                <td><button id="aroperations" class="button" onclick="onClickHandler('*')">X</button></td>
+                <td><button id="aroperations" class="button" onclick="onClickHandler('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="button" onclick="onClickHandler(7)">7</button></td>
+                <td><button class="button" onclick="onClickHandler(8)">8</button></td>
+                <td><button class="button" onclick="onClickHandler(9)">9</button></td>
+                <td rowspan="4"><button id="blue" style="height: 286px;" class="button" onclick="equal()">=</button></td>
+            
+            </tr>
+            <tr>
+                <td><button class="button" onclick="onClickHandler(4)">4</button></td>
+                <td><button class="button" onclick="onClickHandler(5)">5</button></td>
+                <td><button class="button" onclick="onClickHandler(6)">6</button></td>
+               
+            </tr>
+            <tr>
+                <td><button class="button" onclick="onClickHandler(1)">1</button></td>
+                <td><button class="button" onclick="onClickHandler(2)">2</button></td>
+                <td><button class="button" onclick="onClickHandler(3)">3</button></td>
+                
+            </tr>
+            <tr>
+                <td><button class="button" onclick="onClickHandler(0)">0</button></td>
+                <td><button class="button" onclick="onClickHandler('.')">.</button></td>
+                <td><button id="red" class="button" onclick="clean()">Ac</button></td>
+                
+                
+            </tr>
+        </table>
+    </div>
+</div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
